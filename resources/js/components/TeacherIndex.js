@@ -45,8 +45,8 @@ const TeacherIndex = () => {
                 <div className="flex justify-between items-center mb-6">
                     <h1 className="text-3xl font-bold text-gray-800">Teachers</h1>
                     <div className="space-x-4">
-                        <Link to="/" className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-colors">Back to Home</Link>
-                        <Link to="/teachers/create" className="bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors">Add New Teacher</Link>
+                        <Link to="/" className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-colors no-underline">Back to Home</Link>
+                        <Link to="/teachers/create" className="bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors no-underline">Add New Teacher</Link>
                     </div>
                 </div>
 

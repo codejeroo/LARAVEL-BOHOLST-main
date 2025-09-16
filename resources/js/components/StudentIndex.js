@@ -45,8 +45,8 @@ const StudentIndex = () => {
                 <div className="flex justify-between items-center mb-6">
                     <h1 className="text-3xl font-bold text-gray-800">Students</h1>
                     <div className="space-x-4">
-                        <Link to="/" className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-colors">Back to Home</Link>
-                        <Link to="/students/create" className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Add New Student</Link>
+                        <Link to="/" className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-colors no-underline">Back to Home</Link>
+                        <Link to="/students/create" className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors no-underline">Add New Student</Link>
                     </div>
                 </div>
 

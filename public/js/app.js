@@ -72207,7 +72207,7 @@ var StudentCreate = function StudentCreate() {
           children: "Add New Student"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
           to: "/students",
-          className: "text-gray-500 hover:text-gray-700",
+          className: "text-gray-500 hover:text-gray-700 no-underline",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             className: "h-6 w-6",
@@ -72404,7 +72404,7 @@ var StudentEdit = function StudentEdit() {
           children: "Edit Student"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
           to: "/students",
-          className: "text-gray-500 hover:text-gray-700",
+          className: "text-gray-500 hover:text-gray-700 no-underline",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             className: "h-6 w-6",
@@ -72574,11 +72574,11 @@ var StudentIndex = function StudentIndex() {
           className: "space-x-4",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
             to: "/",
-            className: "bg-gray-200 text-gray-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-colors",
+            className: "bg-gray-200 text-gray-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-colors no-underline",
             children: "Back to Home"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
             to: "/students/create",
-            className: "bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors",
+            className: "bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors no-underline",
             children: "Add New Student"
           })]
         })]
@@ -72715,7 +72715,7 @@ var TeacherCreate = function TeacherCreate() {
           children: "Add New Teacher"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
           to: "/teachers",
-          className: "text-purple-600 hover:text-purple-800 font-medium transition duration-300",
+          className: "text-purple-600 hover:text-purple-800 font-medium transition duration-300 no-underline",
           children: "Back to List"
         })]
       }), errors.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -72902,7 +72902,7 @@ var TeacherEdit = function TeacherEdit() {
           children: "Edit Teacher"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
           to: "/teachers",
-          className: "text-blue-600 hover:text-blue-800 font-medium transition duration-300",
+          className: "text-blue-600 hover:text-blue-800 font-medium transition duration-300 no-underline",
           children: "Back to List"
         })]
       }), errors.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -73066,11 +73066,11 @@ var TeacherIndex = function TeacherIndex() {
           className: "space-x-4",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
             to: "/",
-            className: "bg-gray-200 text-gray-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-colors",
+            className: "bg-gray-200 text-gray-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-colors no-underline",
             children: "Back to Home"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
             to: "/teachers/create",
-            className: "bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors",
+            className: "bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors no-underline",
             children: "Add New Teacher"
           })]
         })]

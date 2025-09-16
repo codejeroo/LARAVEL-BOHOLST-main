@@ -36,7 +36,7 @@ const TeacherCreate = () => {
             <div className="w-full max-w-xl mx-auto p-8 md:p-12 bg-white rounded-2xl shadow-xl border border-gray-200">
                 <div className="flex items-center justify-between mb-8">
                     <h1 className="text-3xl font-extrabold text-gray-800">Add New Teacher</h1>
-                    <Link to="/teachers" className="text-purple-600 hover:text-purple-800 font-medium transition duration-300">Back to List</Link>
+                    <Link to="/teachers" className="text-purple-600 hover:text-purple-800 font-medium transition duration-300 no-underline">Back to List</Link>
                 </div>
 
                 {errors.length > 0 && (
