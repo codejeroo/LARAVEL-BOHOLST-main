@@ -7,8 +7,8 @@ export default function Router() {
   return (
     <BrowserRouter>
       <nav className="p-4 bg-gray-200 flex gap-4">
-        <Link to="/" className="text-blue-600 hover:underline">Home</Link>
-        <Link to="/example" className="text-blue-600 hover:underline">Example</Link>
+        <Link to="/" className="text-blue-600 hover:text-blue-800 transition-colors">Home</Link>
+        <Link to="/example" className="text-blue-600 hover:text-blue-800 transition-colors">Example</Link>
       </nav>
 
       <Routes>

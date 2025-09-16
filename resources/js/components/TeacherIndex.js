@@ -63,7 +63,7 @@ const TeacherIndex = () => {
                                 <tr key={teacher.id}>
                                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{teacher.name}</td>
                                     <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-2">
-                                        <Link to={`/teachers/${teacher.id}/edit`} className="text-indigo-600 hover:text-indigo-900 transition-colors">Edit</Link>
+                                        <Link to={`/teachers/${teacher.id}/edit`} className="text-indigo-600 hover:text-indigo-900 transition-colors no-underline">Edit</Link>
                                         <button onClick={() => handleDelete(teacher.id)} className="text-red-600 hover:text-red-900 transition-colors">Delete</button>
                                     </td>
                                 </tr>

@@ -18,14 +18,6 @@ class StudentController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        return view('students.create');
-    }
-
-    /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
@@ -71,20 +63,6 @@ class StudentController extends Controller
     public function show(string $id)
     {
         // Not used in this application, but a good practice to include
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit($id)
-    {
-        $student = Student::find($id);
-
-        if (!$student) {
-            return redirect()->route('students.index')->with('error', 'Student not found.');
-        }
-
-        return view('students.edit', compact('student'));
     }
 
     /**

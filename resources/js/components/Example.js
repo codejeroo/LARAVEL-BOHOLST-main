@@ -7,10 +7,10 @@ function Example() {
             <div className="bg-white p-10 rounded-2xl shadow-xl w-full max-w-lg text-center">
                 <h1 className="text-4xl font-bold text-gray-800 mb-8">School Management Dashboard</h1>
                 <div className="space-y-6">
-                    <Link to="/students" className="block w-full bg-blue-600 text-white font-bold py-4 px-6 rounded-lg text-xl hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg">
+                    <Link to="/students" className="block w-full bg-blue-600 text-white font-bold py-4 px-6 rounded-lg text-xl hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg no-underline">
                         Manage Students
                     </Link>
-                    <Link to="/teachers" className="block w-full bg-purple-600 text-white font-bold py-4 px-6 rounded-lg text-xl hover:bg-purple-700 transition duration-300 transform hover:scale-105 shadow-lg">
+                    <Link to="/teachers" className="block w-full bg-purple-600 text-white font-bold py-4 px-6 rounded-lg text-xl hover:bg-purple-700 transition duration-300 transform hover:scale-105 shadow-lg no-underline">
                         Manage Teachers
                     </Link>
                 </div>

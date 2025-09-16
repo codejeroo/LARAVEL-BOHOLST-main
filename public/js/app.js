@@ -72107,11 +72107,11 @@ function Example() {
         className: "space-y-6",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
           to: "/students",
-          className: "block w-full bg-blue-600 text-white font-bold py-4 px-6 rounded-lg text-xl hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg",
+          className: "block w-full bg-blue-600 text-white font-bold py-4 px-6 rounded-lg text-xl hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg no-underline",
           children: "Manage Students"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
           to: "/teachers",
-          className: "block w-full bg-purple-600 text-white font-bold py-4 px-6 rounded-lg text-xl hover:bg-purple-700 transition duration-300 transform hover:scale-105 shadow-lg",
+          className: "block w-full bg-purple-600 text-white font-bold py-4 px-6 rounded-lg text-xl hover:bg-purple-700 transition duration-300 transform hover:scale-105 shadow-lg no-underline",
           children: "Manage Teachers"
         })]
       })]
@@ -72608,7 +72608,7 @@ var StudentIndex = function StudentIndex() {
                   className: "px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-2",
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
                     to: "/students/".concat(student.id, "/edit"),
-                    className: "text-indigo-600 hover:text-indigo-900 transition-colors",
+                    className: "text-indigo-600 hover:text-indigo-900 transition-colors no-underline",
                     children: "Edit"
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
                     onClick: function onClick() {
@@ -73100,7 +73100,7 @@ var TeacherIndex = function TeacherIndex() {
                   className: "px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-2",
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
                     to: "/teachers/".concat(teacher.id, "/edit"),
-                    className: "text-indigo-600 hover:text-indigo-900 transition-colors",
+                    className: "text-indigo-600 hover:text-indigo-900 transition-colors no-underline",
                     children: "Edit"
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
                     onClick: function onClick() {

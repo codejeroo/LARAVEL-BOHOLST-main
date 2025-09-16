@@ -18,14 +18,6 @@ class TeacherController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        return view('teachers.create');
-    }
-
-    /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
@@ -61,17 +53,6 @@ class TeacherController extends Controller
         $teacher = Teacher::create($validatedData);
 
         return response()->json($teacher, 201);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     * HTTP Method: GET
-     * URL: /teachers/{teacher}
-     */
-    public function edit(Teacher $teacher)
-    {
-        // Pass the specific teacher record to the edit view
-        return view('teachers.edit', compact('teacher'));
     }
 
     /**

@@ -14,9 +14,35 @@ use App\Http\Controllers\TeacherController;
 |
 */
 
+// Function to return HTML for React SPA
+function getReactApp() {
+    $manifestPath = public_path('mix-manifest.json');
+    $manifest = json_decode(file_get_contents($manifestPath), true);
+    $jsFile = $manifest['/js/app.js'] ?? '/js/app.js';
+    $cssFile = $manifest['/css/app.css'] ?? '/css/app.css';
+    
+    return response()->make('
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="' . csrf_token() . '">
+    <title>School Management Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="' . asset($cssFile) . '" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="' . asset($jsFile) . '"></script>
+</body>
+</html>
+    ');
+}
+
 // Main Home Page
 Route::get('/', function () {
-    return view('home');
+    return getReactApp();
 });
 
 // API-like routes for React SPA (no /api prefix) - MUST be before catch-all
@@ -25,7 +51,7 @@ Route::get('/students', function() {
     if (request()->wantsJson() || request()->header('Accept') === 'application/json') {
         return app(App\Http\Controllers\StudentController::class)->index();
     }
-    return view('home');
+    return getReactApp();
 });
 Route::post('/students', [StudentController::class, 'store']);
 Route::get('/students/{id}', [StudentController::class, 'show']);
@@ -36,7 +62,7 @@ Route::get('/teachers', function() {
     if (request()->wantsJson() || request()->header('Accept') === 'application/json') {
         return app(App\Http\Controllers\TeacherController::class)->index();
     }
-    return view('home');
+    return getReactApp();
 });
 Route::post('/teachers', [TeacherController::class, 'store']);
 Route::get('/teachers/{id}', [TeacherController::class, 'show']);
@@ -45,5 +71,5 @@ Route::delete('/teachers/{id}', [TeacherController::class, 'destroy']);
 
 // Catch-all route for React Router - MUST be last
 Route::get('/{any}', function () {
-    return view('home');
+    return getReactApp();
 })->where('any', '.*');
